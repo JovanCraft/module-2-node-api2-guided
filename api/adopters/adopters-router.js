@@ -87,3 +87,6 @@ router.get('/api/adopters', (req, res) => {
         res.status(500).json({ message: 'Error updating the adopter' });
       });
   });
+
+
+  module.exports = router
