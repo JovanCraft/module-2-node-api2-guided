@@ -7,7 +7,7 @@ const dogsRouter = require('./dogs/dogs-router')
 
 const server = express();
 
-server.use(express.json());
+server.use(express.json());//need this line to add things to req.body in post requests!!!
 //server.use(adoptersRouter);
 server.use('/api/adopters', adoptersRouter)
 server.use('/api/dogs', dogsRouter)
